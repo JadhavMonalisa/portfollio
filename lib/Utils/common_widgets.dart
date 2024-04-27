@@ -40,6 +40,8 @@ class NavigationButtons extends StatelessWidget {
         return Transform.scale(
           scale: value,
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               NavigationTextButton(
                   onTap: () {

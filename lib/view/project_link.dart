@@ -21,7 +21,15 @@ class ProjectLinks extends StatelessWidget {
                 onPressed: () {
                   launchUrl(Uri.parse(projectList[index].link));
                 },
-                icon: SvgPicture.asset('assets/icons/github.svg')),
+                icon: SvgPicture.asset(
+                  'assets/icons/playstore.svg',
+                  height: 20.0,
+                  width: 20.0,
+                  colorFilter: const ColorFilter.mode(
+                    Colors.white,
+                    BlendMode.srcIn,
+                  ),
+                )),
           ],
         ),
         const Spacer(),

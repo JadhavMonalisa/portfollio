@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfollio/Utils/common_widgets.dart';
 import 'package:portfollio/Utils/constants.dart';
+import 'package:portfollio/view/drawer.dart';
 import 'package:portfollio/view/experience.dart';
 import 'package:portfollio/view/home.dart';
 import 'package:portfollio/view/projects.dart';
@@ -15,6 +16,7 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const CustomDrawer(),
       body: Column(
         children: [
           kIsWeb && !Responsive.isLargeMobile(context)
@@ -76,7 +78,8 @@ class MainView extends StatelessWidget {
               width: 20.0,
             )
           ]),
-          if (Responsive.isMobile(context)) const NavigationButtons(),
+          if (Responsive.isMobile(context))
+            Center(child: const NavigationButtons()),
           Expanded(
             flex: 9,
             child: PageView(
