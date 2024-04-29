@@ -21,6 +21,9 @@ class _HomeViewState extends State<HomeView> {
         child: Responsive.isMobile(context)
             ? const Column(
                 children: [
+                  SizedBox(
+                    height: 20.0,
+                  ),
                   ProfileImage(
                     height: 200.0,
                     width: 150.0,
@@ -62,22 +65,21 @@ class _HomeViewState extends State<HomeView> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
+              const SizedBox(
+                width: 10.0,
+              ),
               SocialMediaIcon(
                   icon: 'assets/icons/linkedin.svg',
                   onTap: () => launchUrl(Uri.parse(
                       'https://www.linkedin.com/in/monali-jadhav-9a0a91a2'))),
               const SizedBox(
-                width: 5.0,
+                width: 10.0,
               ),
               SocialMediaIcon(
                 icon: 'assets/icons/github.svg',
                 onTap: () =>
                     launchUrl(Uri.parse('https://github.com/JadhavMonalisa')),
               ),
-              const SizedBox(
-                width: 5.0,
-              ),
-              const SocialMediaIcon(icon: 'assets/icons/twitter.svg'),
             ],
           ),
         ),

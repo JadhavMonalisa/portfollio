@@ -86,7 +86,7 @@ class CustomDrawer extends StatelessWidget {
             const SizedBox(
               height: defaultPadding / 2,
             ),
-            const ContactText(title: 'Contact', text: '8390235798'),
+            const ContactText(title: 'Contact', text: '+91 8390235798'),
             const ContactText(title: 'Email', text: 'monalisaj813@gmail.com'),
             const ContactText(
                 title: 'LinkedIn',
