@@ -38,7 +38,7 @@ class _SkillsState extends State<Skills> {
                 title: 'Firebase',
                 image: 'assets/icons/firebase.png'),
             AnimatedLinearProgressIndicator(
-                percentage: 0.85,
+                percentage: 0.6,
                 title: 'Sqlite',
                 image: 'assets/icons/dart.png'),
             AnimatedLinearProgressIndicator(
@@ -50,9 +50,11 @@ class _SkillsState extends State<Skills> {
                 title: 'Clean Architecture',
                 image: 'assets/icons/flutter.png'),
             AnimatedLinearProgressIndicator(
-                percentage: 0.5, title: 'Bloc', image: 'assets/icons/bloc.png'),
+                percentage: 0.5,
+                title: 'Provider',
+                image: 'assets/icons/dart.png'),
             AnimatedLinearProgressIndicator(
-                percentage: 0.93,
+                percentage: 0.55,
                 title: 'Getx',
                 image: 'assets/icons/dart.png'),
           ],
