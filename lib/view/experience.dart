@@ -30,7 +30,7 @@ class ExperienceView extends StatelessWidget {
                   extraLargeScreen:
                       ExperienceGrid(crossAxisCount: 3, ratio: 1.6),
                   largeMobile: ExperienceGrid(crossAxisCount: 1, ratio: 1.8),
-                  mobile: ExperienceGrid(crossAxisCount: 1, ratio: 1.4),
+                  mobile: ExperienceGrid(crossAxisCount: 1, ratio: 1.0),
                   tablet: ExperienceGrid(
                     ratio: 1.7,
                     crossAxisCount: 2,

@@ -38,7 +38,7 @@ class ProjectLinks extends StatelessWidget {
               launchUrl(Uri.parse(projectList[index].link));
             },
             child: const Text(
-              'Read More>>',
+              'Go>>',
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                   color: Colors.amber,
