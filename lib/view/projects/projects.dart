@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfollio/Utils/common_widgets.dart';
 import 'package:portfollio/Utils/constants.dart';
-import 'package:portfollio/model/project_model.dart';
-import 'package:portfollio/view/projects_grid.dart';
+import 'package:portfollio/view/projects/projects_grid.dart';
 import 'package:portfollio/view_model/getx_controllers/projects_controller.dart';
 import 'package:portfollio/view_model/responsive.dart';
 

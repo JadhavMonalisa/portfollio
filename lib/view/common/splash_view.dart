@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:portfollio/Utils/colors.dart';
 import 'package:portfollio/Utils/constants.dart';
 import 'package:portfollio/Utils/responsive.dart';
-import 'package:portfollio/view/home.dart';
-import 'package:portfollio/view/main_view.dart';
+import 'package:portfollio/view/common/main_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

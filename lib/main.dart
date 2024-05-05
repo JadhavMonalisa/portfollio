@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfollio/Utils/colors.dart';
-import 'package:portfollio/view/splash_view.dart';
+import 'package:portfollio/view/common/splash_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +20,6 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: bgColor,
           useMaterial3: true,
         ),
-
-        home: SplashView()
-    );
+        home: SplashView());
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfollio/Utils/constants.dart';
 import 'package:portfollio/model/project_model.dart';
-import 'package:portfollio/view/project_info.dart';
+import 'package:portfollio/view/projects/project_info.dart';
 import 'package:portfollio/view_model/getx_controllers/projects_controller.dart';
 
 class ProjectGrid extends StatelessWidget {

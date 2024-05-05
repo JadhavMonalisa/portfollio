@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfollio/Utils/common_widgets.dart';
 import 'package:portfollio/Utils/constants.dart';
 import 'package:portfollio/Utils/responsive.dart';
-import 'package:portfollio/view/experience_grid.dart';
+import 'package:portfollio/view/experience/experience_grid.dart';
 
 class ExperienceView extends StatelessWidget {
   const ExperienceView({super.key});

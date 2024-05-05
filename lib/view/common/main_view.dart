@@ -2,11 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:portfollio/Utils/common_widgets.dart';
 import 'package:portfollio/Utils/constants.dart';
-import 'package:portfollio/view/drawer.dart';
-import 'package:portfollio/view/experience.dart';
-import 'package:portfollio/view/home.dart';
-import 'package:portfollio/view/projects.dart';
-import 'package:portfollio/view/skills.dart';
+import 'package:portfollio/view/common/drawer.dart';
+import 'package:portfollio/view/experience/experience.dart';
+import 'package:portfollio/view/home/home.dart';
+import 'package:portfollio/view/projects/projects.dart';
+import 'package:portfollio/view/skills/skills.dart';
 import 'package:portfollio/view_model/controller.dart';
 import 'package:portfollio/view_model/responsive.dart';
 
@@ -79,7 +79,7 @@ class MainView extends StatelessWidget {
             )
           ]),
           if (Responsive.isMobile(context))
-            Center(child: const NavigationButtons()),
+            const Center(child: NavigationButtons()),
           Expanded(
             flex: 9,
             child: PageView(
