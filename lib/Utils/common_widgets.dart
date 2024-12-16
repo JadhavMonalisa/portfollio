@@ -424,7 +424,7 @@ class DownloadCV extends StatelessWidget {
     return InkWell(
       onTap: () {
         launchUrl(Uri.parse(
-            'https://drive.google.com/file/d/1f67rxSLqv7NkB2m4fW5_Ep--MBqqH3TW/view?usp=drive_link'));
+            'https://drive.google.com/file/d/1UbZy4ZLdM9RPJfQkVr-XceFD9y6KR1GI/view'));
       },
       child: Container(
         width: 200.0,

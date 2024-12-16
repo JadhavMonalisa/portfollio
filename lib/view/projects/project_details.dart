@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfollio/Utils/constants.dart';
 import 'package:portfollio/model/project_model.dart';
-import 'package:portfollio/view/project_link.dart';
+import 'package:portfollio/view/projects/project_link.dart';
 import 'package:portfollio/view_model/responsive.dart';
 
 class ProjectDetail extends StatelessWidget {
@@ -19,7 +19,8 @@ class ProjectDetail extends StatelessWidget {
           alignment: Alignment.topCenter,
           child: Text(
             projectList[index].name,
-            style: Theme.of(context)
+            style: Theme
+                .of(context)
                 .textTheme
                 .headlineSmall!
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
@@ -29,23 +30,23 @@ class ProjectDetail extends StatelessWidget {
         ),
         Responsive.isMobile(context)
             ? const SizedBox(
-                height: defaultPadding / 2,
-              )
+          height: defaultPadding / 2,
+        )
             : const SizedBox(
-                height: defaultPadding,
-              ),
+          height: defaultPadding,
+        ),
         Text(
           projectList[index].description,
           style: const TextStyle(color: Colors.grey, height: 1.5),
           maxLines: size.width > 700 && size.width < 750
               ? 3
               : size.width < 470
-                  ? 7
-                  : size.width > 600 && size.width < 700
-                      ? 6
-                      : size.width > 900 && size.width < 1060
-                          ? 6
-                          : 4,
+              ? 7
+              : size.width > 600 && size.width < 700
+              ? 6
+              : size.width > 900 && size.width < 1060
+              ? 6
+              : 4,
           overflow: TextOverflow.ellipsis,
         ),
         const Spacer(),
